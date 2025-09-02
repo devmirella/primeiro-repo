@@ -1,2 +1,2 @@
-# primeiro-repo.
+# primeiro-repo
 meu primeiro repositório teste
