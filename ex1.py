@@ -32,14 +32,29 @@ print("************")
 
 #EXERCICIO 4 - POEMA OU FRASE FAVORITO (USANDO PRINT)
 
-print("Ainda bem que não morri de todas as vezess que quis, morrer")
-print("que não soltei da ponte, nem enchi os pulsos de sangue")
-print("nem me deitei ali lá longe, ainda bem que não atei a corda na viga do teto, \nnem comprei na farmacia," 
-"\ncom receita fingida, uma dose de sono eterno, \nainda bem que tive medo \ndas facas \ndas alturas \nE sobretudo de não morrer completamente, ficar por ai " \
-"\nainda mais perdida do que antes," 
-"\nao olhar sem ver \nainda bem \nque o teto sempre foi demasiado alto e eu, ridiculamente pequena,"
-"pra morte, \nse eu tivesse morrido de uma dessas vezes, não ouviria agora a sua voz a chamar \nenquanto escrevo esse poema, que pode não parecer," \
-" mas é um poema de amor.")
+print("""
+Ainda bem que não morri de todas as vezes que quis, morrer
+que não soltei da ponte, nem enchi os pulsos de sangue
+nem me deitei ali lá longe, ainda bem que não atei a corda na viga do teto,
+nem comprei na farmácia,
+
+com receita fingida, uma dose de sono eterno,
+ainda bem que tive medo
+das facas, das alturas,
+e sobretudo de não morrer completamente,
+ficar por aí...
+
+ainda mais perdida do que antes,
+não olhar sem ver,
+ainda bem que o teto sempre foi demasiado alto
+e eu, ridiculamente pequena,
+
+pra morte.
+Se eu tivesse morrido de uma dessas vezes,
+não ouviria agora a sua voz a chamar
+enquanto escrevo esse poema, que pode não parecer,
+mas é um poema de amor.
+""")
 
 
 # EXERCICIO 4 - CONTINUAÇÃO
