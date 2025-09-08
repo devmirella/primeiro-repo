@@ -1,10 +1,13 @@
+
+# EXERCÍCIO 1 - PRINTS BÁSICOS
+
 #PRIMEIRO EXERCICIO EM PYTHON
 print("OLÁ, MIRELLA!")
 print("Esse é o seu primeiro codigo em python.")
 print("Agora você esta oficialmente programando!")
 
 
-# EXERCICIO 2 - TABUADA DO 5 (USANDO PRINT)
+# EXERCÍCIO 2 - TABUADA DO 5 (USANDO PRINT)
 print("5 x 1 = 5 ")
 print("5 x 2 = 10")
 print("5 x 3 = 15 ")
@@ -18,7 +21,7 @@ print("5 x 10 = 50 ")
 
 
 
-#EXERCICIO 3 - DESENEHE COM TEXTOS (USANDO PRINT)
+#EXERCÍCIO 3 - DESENEHE COM TEXTOS (USANDO PRINT)
 
 print("************")
 print("*          *")
@@ -30,7 +33,7 @@ print("************")
 
 
 
-#EXERCICIO 4 - POEMA OU FRASE FAVORITO (USANDO PRINT)
+#EXERCÍCIO 4 - POEMA OU FRASE FAVORITO (USANDO PRINT)
 
 print("""
 Ainda bem que não morri de todas as vezes que quis, morrer
@@ -57,14 +60,14 @@ mas é um poema de amor.
 """)
 
 
-# EXERCICIO 4 - CONTINUAÇÃO
+# EXERCÍCIO 4 - CONTINUAÇÃO
 
 print("                 EU SOU \n" 
 "          UNIVERSO DE ÁTOMOS, \n" 
 "             e ainda assim, \n" 
 "          UM ATOMO NO UNIVERSO.")
 
-# EXERCICIO 4 - CONTINUAÇÃO (USANDO PRINT COM CENTER)
+# EXERCÍCIO 4 - CONTINUAÇÃO (USANDO PRINT COM CENTER)
 
 print("EU SOU".center(40))
 print("O UNIVERSO DE ÁTOMOS,".center(40))
@@ -72,7 +75,7 @@ print("e ainda assim,".center(40))
 print("UM ÁTOMO NO UNIVERSO".center(40))
 
 
-# EXERCICIO 5 - CONTAR ATE 10 USANDO PRINT (SEM ESTRUTURAS DE REPETIÇÃO) 
+# EXERCÍCIO 5 - CONTAR ATE 10 USANDO PRINT (SEM ESTRUTURAS DE REPETIÇÃO) 
 
 print("1")
 print("2")
