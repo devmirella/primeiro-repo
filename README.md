@@ -1,2 +1,3 @@
-# primeiro-repo
-meu primeiro repositório teste
+# Primeiro Repositorório 
+Repositorio criado para registrar minha prática em python.
+
