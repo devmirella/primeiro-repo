@@ -1,7 +1,7 @@
-#EXERCÍCIO 4 ex4.py - 
+# EXERCÍCIO ex4.py 
 # ° CONDICIONAIS (IF, ELIF, ELSE)
 
-# EXERCÍCIO 1 
+#EXERCÍCIO 1 
 # ° positivo ou negativo
 num = int(input("Digite um numero:"))
 if num >= 0:
@@ -55,7 +55,13 @@ else:
  
 # ° multiplo de 3 e 5
 
-n
+num = int(input("informe um numero:"))
+ 
+if num % 3 == 0 and num % 5 == 0:
+    print(f"O numero {num} é multiplo de 3 e 5")
+else:
+    print(f"O numero {num} não é multiplo de 3 e 5")
+
 
 
 
