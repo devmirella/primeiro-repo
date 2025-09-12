@@ -63,6 +63,43 @@ else:
     print(f"O numero {num} não é multiplo de 3 e 5")
 
 
+num = int(input("Informe um numero inteiro:"))
+
+if num % 2 == 0:
+    print(f"o numero é par ")
+
+else:
+    print(f'o numero é impar')
+
+
+
+# ° Vogal ou consoante
+letra = input("Informe uma letra:")
+
+if letra.lower() == "a" or letra.lower() == "e" or letra.lower() == "i" or letra.lower() == "o" or letra.lower() == "u":
+    print(f"A letra informada: {letra} é uma vogal")
+
+else:
+    print(f"A letra informada: {letra} é uma consoante")
+
+# ° Nota com conceito
+
+nota = int(input("Informe um numero inteiro de (0 a 10):"))
+
+if nota == 9 or 10:
+    print(f"Conceito A")
+
+elif nota == 7 or 8:
+    print(f"Conceito B")
+
+elif nota == 5 or 6:
+    print(f"Conceito C")
+
+else:
+    print(f"Conceito D")
+
+
+
 
 
 
