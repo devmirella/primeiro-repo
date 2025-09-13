@@ -82,6 +82,8 @@ if letra.lower() == "a" or letra.lower() == "e" or letra.lower() == "i" or letra
 else:
     print(f"A letra informada: {letra} é uma consoante")
 
+
+
 # ° Nota com conceito
 
 nota = int(input("Informe um numero inteiro de (0 a 10):"))
@@ -97,7 +99,6 @@ elif nota == 5 or 6:
 
 else:
     print(f"Conceito D")
-
 
 
 
