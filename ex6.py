@@ -3,6 +3,82 @@
 # ° Listas, String e Dicionários
 
 
+lista = [1, 2, 3, 4]
+print("Lista                ->", lista)
+
+
+# testando "in"
+print("2 in Lista           ->", 2 in lista)
+print("5 in Lista           ->", 5 in lista)
+
+
+# Testando "not in"
+print("2 not in Lista       ->", 2 not in lista)
+print("5 not in Lista       ->", 5 not in lista)
+
+
+# outros exemplos com string 
+palavra = "casa"
+print("\nPalavra:", palavra)
+print("'a' in palavra       ->", 'a' in palavra)
+print("'z' not in palavra   ->", 'z' not in palavra)
+ 
+for palavra in palavra:
+    print(palavra)
+
+
+# -----------
+
+palavra = ['casa', 'carro', 'musica', 'arte']
+print(palavra)
+
+for i in palavra:
+    print(i)
+          
+          
+# -----------
+
+            # class list
+# Lista é uma coleção ordenada e mutável. Permite membros duplicados.
+# index:   0        1        2         3
+lista = ['casa', 'carro', 'musica', 'arte']
+print(lista)
+print(lista[3])
+
+print(type(lista))
+
+
+# -----------
+            # class tuple
+# Tupla é uma coleção ordenada e imútavel. Permite membros duplicados.
+# index:   0        1   2   3
+tupla = ('carro', True, 2, 3.5)
+print(tupla)
+print(tupla[2])
+
+print(type(tupla))
+
+
+# -----------
+            # class dict
+# Dicionário é uma coleção ordenada e mutável. Não permite membro duplicado
+#             chave:   valor
+dicionario = {"nome": "carro", "logica": True, "numero": 2, "outroNumero": 3.5}
+print(dicionario)
+print(dicionario["outroNumero"])
+
+print(type(dicionario))
+
+
+# ------------
+            # class set
+# Set é uma coleção não ordenada e não indexada, Não membro duplicado
+conjunto = {"carro", True, 2, 3.5}
+print(conjunto)
+
+print(type(conjunto))
+
+
 # 1 - Números ate "ok"
 maior = menor = None
 quantidade = soma = 0
@@ -27,7 +103,6 @@ while True:
     except ValueError:
         print(f"Digite um número inteiro ")
 
-
 if quantidade > 0:
     print(f"Quantidade: {quantidade} ")
     print(f"Soma: {soma}")
@@ -36,11 +111,8 @@ if quantidade > 0:
     print(f"Media {soma / quantidade}")
     
 
-
 # 2) Contador de Caracteres
-
 digitos = espaços = vogais = consoantes = 0
-
 
 frase = input('Digite um frase:')
 
@@ -69,27 +141,159 @@ texto = input("Números (Separados por espaço): ")
 numero = texto.split() # .split() -> quebra string nos espaços
 numero = [int(n) for n in texto.split()] # Transforma cada pedacinho em número (inteiros)
 sem_dup = []  # sem_dup -> Lista vazia que vai guardar só os números sem repetição.
+
 for n in numero: # Um laço que percorre cada número da lista
+
     if n not in sem_dup: # Aqui pergunta se o número esta na lista, sem sim "ignora" e se não, "entra".
      sem_dup.append(n) # Adiciona o numero ao final da lista
+
 print(sem_dup)
 
 
+# 4 - Número maior, segundo maior, número menor e segundo maior 
+#maior = None 
+#menor = None 
+#segundo_maior = None 
+#segundo_menor = None
 
-lista = [1, 2, 3, 4]
-print("Lista                ->", lista)
+maior = menor = segundo_maior = segundo_menor = None
 
-# testando "in"
-print("2 in Lista           ->", 2 in lista)
-print("5 in Lista           ->", 5 in lista)
+while True:
+    saida = input("\nDigite um numero inteiro ou digite 'ok' para sair")
 
-# Testando "not in"
-print("2 not in Lista       ->", 2 not in lista)
-print("5 not in Lista       ->", 5 not in lista)
+    if saida.lower() == "ok":
+        break
 
-# outros exemplos com string 
-palavra = "casa"
-print("\nPalavra:", palavra)
-print("'a' in palavra       ->", 'a' in palavra)
-print("'z' not in palavra   ->", 'z' not in palavra)
+    try:
+        numero = int(saida) # Aceita positivos e negativos
+        
+        # Atualiza maior e segundo_maior
+        if maior is None or numero > maior:
+               numero != maior   # Evita duplicado
+               segundo_maior = maior 
+               maior = numero 
 
+        elif (segundo_maior is None or numero > segundo_menor) and numero != maior:
+              segundo_maior = numero
+
+        # Atualizada o menor e o segundo_menor
+        if menor is None or numero < menor:
+           if  numero != menor:
+                segundo_menor = menor
+                menor = numero 
+
+        elif segundo_menor is None or numero < segundo_menor and numero != menor:
+                segundo_menor = numero
+
+    except ValueError:
+        print(f"Digite um número valido")
+
+
+if maior is None:
+    print(f"Nenhum número foi digitado ")
+
+else:
+    print(f"Número maior: {maior}")
+
+    if segundo_maior is not None:
+         print(f"Segundo maior: {segundo_maior}")
+    
+    else:
+        print(f"Não existe um segundo maior número.")
+
+    print(f"Menor número: {menor}")
+
+    if segundo_menor is not None:
+        print(f"Segundo menor número: {segundo_menor}")
+
+    else: 
+        print(f"Não existe um segundo menor número")
+
+
+ #----------------------------------------------------------------------------------
+
+
+maior = menor = segundo_maior = segundo_menor = None
+
+
+while True:
+    saida = input(f"Digite um numero inteiro ou digite (ok) se quiser sair")
+
+    if saida.lower() == "ok":
+        break
+    
+
+
+    try:
+        numero = int(saida)
+        
+        
+
+        if maior is None or numero > maior:
+           segundo_maior = maior
+           maior = numero 
+
+
+        elif segundo_maior is None or numero > segundo_maior:
+            segundo_maior == numero
+
+
+        if menor is None or numero < menor:
+            segundo_menor = menor 
+            menor =  numero 
+
+
+        elif segundo_menor is None or numero < segundo_menor:
+            segundo_menor = numero
+
+
+
+    except ValueError:
+        print(f"Digite um número valido")
+
+
+if maior is None:
+    print(f"Nenhum número foi digitado ")
+
+
+else:
+    maior == numero
+    print(f"Número maior: {maior}")
+
+
+    if segundo_maior is not None:
+         print(f"Segundo maior: {segundo_maior}")
+    
+    else:
+        print(f"Não existe um segundo maior número:")
+
+
+    print(f"Menor número: {menor}")
+    if segundo_menor is not None:
+        print(f"Segundo menor número: {segundo_menor}")
+
+
+    else: 
+        print(f"Não existe um segundo menor número")
+
+
+
+        
+
+
+
+
+
+
+    
+
+
+
+        
+
+
+
+
+
+
+    
