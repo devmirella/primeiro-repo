@@ -35,7 +35,7 @@ print(palavra)
 for i in palavra:
     print(i)
           
-          
+        
 # -----------
 
             # class list
@@ -49,6 +49,7 @@ print(type(lista))
 
 
 # -----------
+
             # class tuple
 # Tupla é uma coleção ordenada e imútavel. Permite membros duplicados.
 # index:   0        1   2   3
@@ -79,7 +80,7 @@ print(conjunto)
 print(type(conjunto))
 
 
-# 1 - Números ate "ok"
+# 1) - Números ate "ok"
 maior = menor = None
 quantidade = soma = 0
 
@@ -111,7 +112,7 @@ if quantidade > 0:
     print(f"Media {soma / quantidade}")
     
 
-# 2) Contador de Caracteres
+# 2) - Contador de Caracteres
 digitos = espaços = vogais = consoantes = 0
 
 frase = input('Digite um frase:')
@@ -136,7 +137,7 @@ print(f"Digitos = {digitos}")
 print(f"Espaços = {espaços}")
 
 
-# 3) Criar lista sem duplicatas 
+# 3) - Criar lista sem duplicatas 
 texto = input("Números (Separados por espaço): ")
 numero = texto.split() # .split() -> quebra string nos espaços
 numero = [int(n) for n in texto.split()] # Transforma cada pedacinho em número (inteiros)
@@ -150,7 +151,7 @@ for n in numero: # Um laço que percorre cada número da lista
 print(sem_dup)
 
 
-# 4 - Número maior, segundo maior, número menor e segundo maior 
+# 4) - Número maior, segundo maior, número menor e segundo maior 
 #maior = None 
 #menor = None 
 #segundo_maior = None 
@@ -275,6 +276,32 @@ else:
 
     else: 
         print(f"Não existe um segundo menor número")
+
+
+
+# 5) - Leia um texto e mostre as 3 palavras mais frequentes.
+
+texto = input("Informe Um Texto: ").lower()
+
+palavras = texto.split() # Divide o texto em palavras
+contagem = {}            # Dicionário para contar cada palavra, Cria um dicionário vazio para contar quantas vezes cada palavra aparece. A ideia é ficar assim: {"python": 3, "é": 2, "legal": 1}.
+
+
+# Conta as ocorrências 
+for p in palavras:
+    if p in contagem:
+        contagem[p] += 1
+    
+    else:
+        contagem[p] = 1
+
+mais_frequentes = sorted(contagem.items(), key=lambda x: x[1], reverse=True)
+
+
+print("Top 3 palavras mais frequentes: ")
+for palavra, freq in mais_frequentes[:3]:
+    print(f"{palavra}: {freq} vezes")
+
 
 
 
