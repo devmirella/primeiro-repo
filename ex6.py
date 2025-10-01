@@ -17,7 +17,8 @@ print("2 not in Lista       ->", 2 not in lista)
 print("5 not in Lista       ->", 5 not in lista)
 
 
-# outros exemplos com string 
+# outros exemplos com string.
+
 palavra = "casa"
 print("\nPalavra:", palavra)
 print("'a' in palavra       ->", 'a' in palavra)
@@ -40,6 +41,7 @@ for i in palavra:
 
             # class list
 # Lista é uma coleção ordenada e mutável. Permite membros duplicados.
+
 # index:   0        1        2         3
 lista = ['casa', 'carro', 'musica', 'arte']
 print(lista)
@@ -52,6 +54,7 @@ print(type(lista))
 
             # class tuple
 # Tupla é uma coleção ordenada e imútavel. Permite membros duplicados.
+
 # index:   0        1   2   3
 tupla = ('carro', True, 2, 3.5)
 print(tupla)
@@ -63,6 +66,7 @@ print(type(tupla))
 # -----------
             # class dict
 # Dicionário é uma coleção ordenada e mutável. Não permite membro duplicado
+
 #             chave:   valor
 dicionario = {"nome": "carro", "logica": True, "numero": 2, "outroNumero": 3.5}
 print(dicionario)
@@ -74,6 +78,7 @@ print(type(dicionario))
 # ------------
             # class set
 # Set é uma coleção não ordenada e não indexada, Não membro duplicado
+
 conjunto = {"carro", True, 2, 3.5}
 print(conjunto)
 
@@ -81,6 +86,7 @@ print(type(conjunto))
 
 
 # 1) - Números ate "ok"
+
 maior = menor = None
 quantidade = soma = 0
 
@@ -113,6 +119,7 @@ if quantidade > 0:
     
 
 # 2) - Contador de Caracteres
+
 digitos = espaços = vogais = consoantes = 0
 
 frase = input('Digite um frase:')
@@ -138,6 +145,7 @@ print(f"Espaços = {espaços}")
 
 
 # 3) - Criar lista sem duplicatas 
+
 texto = input("Números (Separados por espaço): ")
 numero = texto.split() # .split() -> quebra string nos espaços
 numero = [int(n) for n in texto.split()] # Transforma cada pedacinho em número (inteiros)
@@ -152,6 +160,7 @@ print(sem_dup)
 
 
 # 4) - Número maior, segundo maior, número menor e segundo maior 
+
 #maior = None 
 #menor = None 
 #segundo_maior = None 
@@ -288,6 +297,7 @@ contagem = {}            # Dicionário para contar cada palavra, Cria um dicion�
 
 
 # Conta as ocorrências 
+
 for p in palavras:
     if p in contagem:
         contagem[p] += 1
@@ -303,22 +313,33 @@ for palavra, freq in mais_frequentes[:3]:
     print(f"{palavra}: {freq} vezes")
 
 
+# Ordenar números
 
+numeros = [5, 2, 9, 1]
 
-        
+ordenados = sorted(numeros)                     # ordem crescente
+print(ordenados)
 
-
-
-
-
-
-    
-
-
+ordenados_desc = sorted(numeros, reverse=True)  # ordem decrescente
+print(ordenados_desc)
 
         
+# Ordenar tuplas pelo primeiro elemento
 
+dados = [("b", 3), ("a", 5), ("c", 1)]
 
+resultado = sorted(dados)                       # usa a letra (primeiro elemento) para ordenar
+print(resultado)
+
+# ------------------------------------------
+
+dados = [("b", 3), ("a", 5), ("c", 1)]
+
+resultado = sorted(dados)
+print(resultado)
+
+resultado_reverso  = sorted(dados, reverse=True)
+print(resultado_reverso)
 
 
 
