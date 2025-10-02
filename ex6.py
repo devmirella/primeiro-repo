@@ -342,6 +342,68 @@ resultado_reverso  = sorted(dados, reverse=True)
 print(resultado_reverso)
 
 
+# Ordenar tuplas pelo segundo elemento (com key=)
+
+dados = [("b", 3), ("a", 5), ("c", 1)]
+
+resultado = sorted(dados, key=lambda x: x[1])
+print(resultado)
 
 
-    
+contagem = {
+    "python": 3,
+    "é": 2,
+    "legal": 1
+}
+
+ordenado = sorted(contagem.items(), key=lambda x: x[1], reverse=True)
+print(ordenado)
+
+
+# Ordenar nomes de pessoas 
+
+nomes = ["Mirella", "Ana", "João", "Bruno"]
+
+alfabetica = sorted(nomes)
+print(alfabetica)
+
+# Ordem alfabética inversa (z - A)
+
+nomes = ["Mirella", "Ana", "João", "Bruno"]
+
+alfabetica = sorted(nomes, reverse=True)
+print(alfabetica)
+
+
+# Ordenar números decimais
+
+valores = [4.5, 2.1, 9.8, 3.3]
+
+crescente = sorted(valores)
+print(crescente)
+
+
+# Ordem Decrescente 
+
+valores = [4.5, 2.1, 9.8, 3.3]
+
+decrescente = sorted(valores, reverse=True)
+print(decrescente)
+
+
+# Ordenar lista de tuplas por nomes 
+
+Lista = [("Carlos", 7.5), ("Ana", 8.9), ("Bruna", 6.2)]
+
+nome = sorted(lista)
+print(nome)
+
+
+# Ordenar lista de tuplas pela nota (com key)
+
+lista = [("Carlos", 7.5), ("Ana", 8.9), ("Bruna", 6.2)]
+
+nome = sorted(lista, key=lambda y: y[1] )
+print(nome)
+
+
