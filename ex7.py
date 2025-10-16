@@ -10,7 +10,7 @@
 
 # def nome_da_funcao(param1, param2):
     # faz algo
-   # return resultado  # opcional, mas MUITO importante!
+   # return resultado  # opcional, mas MUITO importante!, return é o que uma função faz quando termina
 
 
 # Exemplos rápidos 
@@ -23,6 +23,8 @@ print(total)
 
 
 # ----
+# Texto de saudação
+# Essa função Cumprimenta alguém.
 
 def saudaçao(nome= "Mundo"):
     return f"Olá, {nome}!"
@@ -32,6 +34,7 @@ saudaçao("Mirella")
 
 
 # ---------
+# Essa função filtra e separa números pares dentro de uma lista.
 
 def eh_par(n):
     return n % 2 == 0 # Devolve True se o numero for "Par"
@@ -60,3 +63,124 @@ def top_palavras(texto, k=3): # Cria uma função com dois parâmetros: o texto 
 
     ordenado = sorted(cont.items(), key=lambda x: x[1], reverse=True) # Ordena, coloca as palavras da mais repetida pra menos
     return ordenado[:k]  # Retorna o resultado, Devolve as 'K' palavras mais frequentes
+
+
+# 1) Escreva uma função que retorne True se (n) for par
+
+def eh_par(n):
+    return n % 2 == 0
+def filtrar_pares(lista):
+    pares = []
+    for n in lista:
+        if eh_par(n):
+            pares.append(n)
+    return pares
+
+resultado = filtrar_pares([1, 3, 5, 6, 8, 13, 22])
+print(resultado)
+
+
+
+def eh_par(numero):
+    return numero % 2 == 0
+
+def filtar_pares(lista):
+    pares = []
+    for numero in lista:
+        if eh_par(numero):
+            pares.append(numero)
+    return pares
+
+try:
+
+    numero = int(input("Informe um número para descobrir se é par"))
+    if eh_par(numero):
+        print(f"{numero} é par!")
+
+    else: 
+        print(f"{numero} não é par!")
+
+except ValueError:
+        
+        print("Erro: Você não digitou um número válido!")
+
+
+def eh_par(n): # Cria uma função chamada eh_par que recebe um número n.
+    if n % 2 == 0: # Usa o modolo % pata ver se há resto na divisão por 2. Se o resto for 0, é par
+        return True # Retorna True se for par.
+    else: # Caso contrario
+        return False # Retorna False
+
+
+
+def eh_par(n):
+    if n % 2 == 0:
+        return True
+    else:
+        return False
+
+
+# Programa principal
+numero = int(input("Digite um número: "))
+
+if eh_par(numero):
+    print(f"{numero} é par!")
+else:
+    print(f"{numero} é ímpar!")
+
+
+# 2) Media
+
+soma = 0
+contador = 0
+lista = []
+
+
+def lista_numero (lista): # recebe a lista
+    global soma, contador # permite usar as variáveis de fora
+
+    if not lista     # se a lista não estiver vazia
+         return 0    # Se a lista estiver vazia, retorne o número 0
+
+    for numero in lista: # percorrer cada número dentro da lista
+        soma += numero 
+        contador += 1
+        
+    media = soma / contador 
+    return media 
+
+        
+
+    while True:
+        numero = input("innforme um numero, ou 'ok' para sair").lower() # leio o que o usuário digitou como texto, vejo se é “ok” → se for, paro, senão, transformo em número e adiciono na lista.
+
+
+        if numero == 'OK':  # Verifica se o usuário deseja sair
+            break 
+
+        else:
+            numero = int(numero) # Transforma o texto em número
+            lista.append(numero) # adiciona a lista
+        
+print(lista_numero(lista)) # chama a função e mostra o resultado
+
+
+# 3) fatorial(n)
+
+def fatorial(n):
+    if n == 0:
+        return 1
+
+    resultado = 1
+
+    for i in range(1, n + 1): # # Cria uma variável 'i' que vai um valor diferente a cada volta do laço, range (1, n + 1) gera uma sequencia de números de 1 até 'n' (0 +1 pq python para antes o último número).
+        resultado *= i
+
+    return resultado 
+
+n = int(input("informe um numero para calcular o fatorial"))
+
+print(fatorial(n))
+
+
+
