@@ -129,7 +129,7 @@ else:
     print(f"{numero} é ímpar!")
 
 
-# 2) Media
+# 2) Receba uma lista de números e retorne a media
 
 soma = 0
 contador = 0
@@ -165,7 +165,9 @@ def lista_numero (lista): # recebe a lista
 print(lista_numero(lista)) # chama a função e mostra o resultado
 
 
-# 3) fatorial(n)
+
+
+# 3) Retorne o fatorial de (n)
 
 def fatorial(n):
     if n == 0:
@@ -184,3 +186,37 @@ print(fatorial(n))
 
 
 
+# 4) Saudação
+
+def saudaçao(nome= "Mundo"):
+    return f"Olá, {nome}!"
+    
+    
+print(saudaçao())
+
+
+# 5) contador (Retorne quantas vogais existem no texto)
+
+def palavras_texto(texto):
+    texto = texto.lower()
+ 
+    contador = 0
+
+    for letra in texto:
+        if letra in "aeiou":
+            contador += 1
+
+    return contador
+
+texto = input("informe um texto:")
+print(palavras_texto(texto))
+
+
+
+
+
+
+
+        
+
+   
