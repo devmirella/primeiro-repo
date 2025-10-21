@@ -21,6 +21,17 @@ def soma(a, b):
 total = soma(2, 3)
 print(total)
 
+# -----------------
+
+def soma(y, k):
+    return y + k
+
+print(soma(5, 3))
+
+# ----------------
+
+soma = lambda y, k: y * k
+print(soma(5, 3))
 
 # ----
 # Texto de saudação
@@ -214,9 +225,34 @@ print(palavras_texto(texto))
 
 
 
+# 6) segundo_maior(lista)
 
-
-
+def segundo_maior(lista):
+    lista = list(set(lista)) # set(lista) -> transforma a lista num conjunto(sem repetições), set é um conjunto, ele não guarda valores repetidos
+    if len(lista) < 2: # Se depois de tirar as duplicatas, sobrou menos 2, então não existe, segundo maior numero:
+        return None # Nesse caso, devolve None e para aqui
+    lista = sorted(lista) # Coloco os números em ordem crescente
+    return lista[-2] # A posição -1 é o ultimo item, e -2 é o peenúltimo, retorno esse número, que é o segundo maior da lista
+print(segundo_maior([5, 2, 9, 4, 9]))
         
+# ------------------------------
 
-   
+def segundo(lista):
+    lista = list(set(lista))
+    if len(lista) - 2:
+        return None
+
+    lista = sorted(lista)
+    return lista[-2]
+
+print(segundo([9, 9]))
+
+
+def soma(y, k):
+    return y + k
+
+print(soma(5, 3))
+
+
+soma = lambda y, k: y * k
+print(soma(5, 3))
