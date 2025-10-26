@@ -60,6 +60,7 @@ try:
 
 except:
     print("Produto não encontrado!")
+    
 
 
 # 2) Media de notas
@@ -85,6 +86,7 @@ media = sum(notas)/len(notas)
 print(f"A media das notas informadas são: {media:.1f} ")
 
 
+
 # 3) Divisão por 0
 try:
     numero = int(input(f"Informe um numero:"))
@@ -95,6 +97,7 @@ except:
     print(f"Não é possivel dividir por 0!")
 
 
+
 # 4) Tipos de erros especifico
 try:
     nome = input(f"Informe seu nome: ")
@@ -103,4 +106,17 @@ try:
 
 except:
     print(f"idade deve ser um numero inteiro!")
-    
+
+
+
+# 5) Usando finally
+
+try:
+    arquivo = open("dados.txt", "r")
+    print(arquivo.read())
+
+except FileNotFoundError:
+    print("Arquivo não encontrado.")
+
+finally:
+    print("Arquivo finalizado")
