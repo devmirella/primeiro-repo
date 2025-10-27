@@ -60,7 +60,7 @@ try:
 
 except:
     print("Produto não encontrado!")
-    
+
 
 
 # 2) Media de notas
@@ -97,6 +97,18 @@ except:
     print(f"Não é possivel dividir por 0!")
 
 
+# -------------------
+
+try:
+    resultado = 10 / 0
+
+except ZeroDivisionError:
+    print("Erro: Divisão por zero!")
+
+finally:
+    print("Finalmente!")
+
+
 
 # 4) Tipos de erros especifico
 try:
@@ -120,3 +132,17 @@ except FileNotFoundError:
 
 finally:
     print("Arquivo finalizado")
+
+
+
+#  6) Digite sua idade e trate possivel erro
+
+while True:
+    try:
+        idade = int(input(f"Informe sua idade: "))
+        print(f"Você tem {idade} anos")
+        break 
+
+    except: 
+        print(print(f"Digite um valor valido"))
+    
