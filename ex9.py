@@ -39,13 +39,24 @@ with open("nomes.txt", "r") as arquivos:
 # 3) cadastro de nomes
 with open("nomes.txt", "w") as arquivo:
     while True:
-        nome = input("Digite um nome (ou 'sair' para encerrar): ")
-        if nome.lower() == "sair":
+        nomes = input("Digite um nome (ou 'sair' para encerrar): ")
+        if nomes.lower() == "sair":
             break 
-        arquivo.write(nome + "\n")
+        arquivo.write(nomes + "\n")
 
 print("\n--- Nomes salvos com sucesso! ---\n")
 
 with open("nomes.txt", "r") as arquivo:
     print("Lista de nomes gravados: ")
+    print(arquivo.read())
+
+
+# 4) Manipulação de arquivos
+
+frase = input("Informe uma frase: ")
+with open("frase.txt", "w") as arquivo:
+    arquivo.write(frase)
+
+with open("frase.txt", "r") as arquivo:
+    print("Frase informada")
     print(arquivo.read())
