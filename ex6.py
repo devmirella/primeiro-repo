@@ -407,3 +407,54 @@ nome = sorted(lista, key=lambda y: y[1] )
 print(nome)
 
 
+# lista com valores, usando enumerate
+
+valores = []
+valores.append(6)
+valores.append(30)
+valores.append(1)
+valores.append(8)
+
+for c, i in enumerate(valores):
+    
+    print(f"na posição {c} encontrei o valor {i}")
+    print(f"Cheguei ao final da lista.")
+
+
+
+# lista com valores (0, 5)
+
+valores = list()
+for cont in range(0, 5):
+    valores.append(int(input('informe um numero:'))) #aquivai ler quantos numero eu colocar na linha acima, range(0, 5) que no caso aqui é 5 vezes, e vai mostrar os numeros e a posição de cada um.
+
+
+# Faça uma lista que peça 5 numeros
+
+print('faça uma lista que peça 5 numeros')
+
+lista = []
+maior = 0
+menor = float('inf')
+
+for c in range(5):
+    n = int(input('informe um numero:'))
+
+    lista.append(n)
+    print(f'na posição {c} tem o numero {n}')
+
+    if n > maior:
+        maior = n 
+
+    if n < menor:
+        menor = n 
+
+print(f'o maior numero {maior}, na posição:..', end=' ')
+for c, valor in enumerate(lista):
+    if valor == maior:
+        print(c, end=' ')
+
+print(f'o menor numero {menor}, na posição:')
+for c, valor in enumerate(lista):
+    if valor == menor:
+        print(c, end=' ')
