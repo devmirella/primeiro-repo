@@ -60,3 +60,48 @@ with open("frase.txt", "w") as arquivo:
 with open("frase.txt", "r") as arquivo:
     print("Frase informada")
     print(arquivo.read())
+
+
+# 5) Use o modo "a" para continuar gravando
+
+with open("texto.txt", "a", encoding="utf-8" ) as f:
+    f.write("Boa noite!")
+    f.write("Esta uma linda noite!")
+    f.write("As estrelas, assim como arte, me fazem sorrir.")
+
+with open("texto.txt", "r", encoding="utf-8" ) as f:
+    conteudo = f.read()
+    print("Conteudo gravado:")
+    print(conteudo)
+
+
+# outra forma de fazer 
+
+with open("tex.txt", "a", encoding="utf-8" ) as s:
+    s.write(input("informe uma frase")+ "\n")
+    print("Texto adicionado!" )
+
+with open("tex.txt", "r", encoding="utf-8" ) as s:
+    conteudo = s.read()
+    print(conteudo)
+
+
+# outra forma de fazer 
+
+with open("ttx.txt", "a", encoding="utf-8") as p:
+    while True:
+        texto = input("Informe a frase ou texto que desejar ('sair' para finalizar) ")
+
+        if texto.lower( )== "sair":
+            break 
+
+        p.write(texto + "\n")
+
+    print("Textos ou frases adicionadas! ")
+
+
+with open("ttx.txt", "r", encoding="utf-8" ) as p:
+    conteudo = p.read()
+    print(conteudo)
+
+
