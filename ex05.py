@@ -1,4 +1,5 @@
 # Exercício ex5.py
+
 # ° Estruturas de Repetição
 
 # ° Contagem com For
