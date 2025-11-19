@@ -1,4 +1,5 @@
 # Exercício ex10.py
+
 # ° Funções em Python
 
 # tipo de funções:
