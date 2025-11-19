@@ -1,5 +1,6 @@
 
 # Exercício ex6.py
+
 # ° Listas, String e Dicionários
 
 
