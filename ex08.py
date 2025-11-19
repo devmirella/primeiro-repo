@@ -1,4 +1,5 @@
 # Exercício ex8.py
+
 # ° TRATAMENTO DE ERROS (try/ except finally)
 
 # Conceito: Quando algo dá errado no código, o python interrompe a execução e mostra um erro.
