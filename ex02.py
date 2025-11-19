@@ -1,4 +1,5 @@
 #EXERCICIO 1 - VARIÁVEIS SIMPLES
+
 # VARIÁVEL SIMPLES COM SEU NOME
 nome = 'mirella' 
 print(nome)
