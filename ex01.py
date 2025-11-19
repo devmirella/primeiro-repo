@@ -1,10 +1,12 @@
 
+
 # EXERCÍCIO 1 - PRINTS BÁSICOS
 
 #PRIMEIRO EXERCICIO EM PYTHON
 print("OLÁ, MIRELLA!")
 print("Esse é o seu primeiro codigo em python.")
 print("Agora você esta oficialmente programando!")
+
 
 
 # EXERCÍCIO 2 - TABUADA DO 5 (USANDO PRINT)
@@ -73,6 +75,7 @@ print("EU SOU".center(40))
 print("O UNIVERSO DE ÁTOMOS,".center(40))
 print("e ainda assim,".center(40))
 print("UM ÁTOMO NO UNIVERSO".center(40))
+
 
 
 # EXERCÍCIO 5 - CONTAR ATE 10 USANDO PRINT (SEM ESTRUTURAS DE REPETIÇÃO) 
