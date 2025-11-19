@@ -1,8 +1,8 @@
 # Exercício ex10.py
 
 # ° Funções em Python
-
 # tipo de funções:
+
 # 1) Sem parâmentros
 
 def boas_vindas():    
