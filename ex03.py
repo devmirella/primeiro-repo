@@ -2,6 +2,7 @@
 # °INPUT E INT DO USUÁRIO
 
 #PEDINDO DADOS DO USUÁRIO
+
 nome = input("QUAL É O SEU NOME?")
 idade = int(input("QUAL É O SEU IDADE? "))
 cidade = input("QUAL É A SUA CIDADE?")
@@ -22,6 +23,7 @@ print(f"Olá, {nome}! você tem {idade}anos")
 
 
 # EXERCÍCIO 2 
+
 # ° pergunte o nome e a cidade
 nome = input("Qual é o seu nome?")
 print(f"Prazer em te conhecer, {nome}")
@@ -31,6 +33,7 @@ print(f'Que legal, {nome}! Eu também moro em {cidade} - {estado}!')
 
 
 # EXERCÍCIO 3 
+
 # ° peça dois numeros e mostre a soma entre eles
 num1 = float(input("Digite o primeiro numero:"))
 num2 = float(input("Digite o segundo numero:"))
@@ -47,14 +50,14 @@ resultado =  (num1 * num2) / num3
 print(f" Resultado = {resultado}")
 
 
-# *Continuação do EXERCICIO 3 - 
+# *Continuação
 # ° subtração 
 num1 = float(input("Digite o primeiro numero:"))
 num2 = float(input("Digite o segundo numero:"))
 print(f" {num1} - {num2} = {num1 - num2}")
 
 
-# *Continuação do Exercicio 3 - 
+# *Continuação
 # ° divisão 
 num1 = float(input("Digite o primeiro numero:"))
 num2 = float(input("Digite o segundo numero:"))
