@@ -1,4 +1,5 @@
 # Exercício ex9.py
+
 # ° Manipulação de arquivos (Leitura e Escrita)
 
 
