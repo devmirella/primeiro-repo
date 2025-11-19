@@ -2,6 +2,7 @@
 # ° CONDICIONAIS (IF, ELIF, ELSE)
 
 #EXERCÍCIO 1 
+
 # ° positivo ou negativo
 num = int(input("Digite um numero:"))
 if num >= 0:
