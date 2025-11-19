@@ -1,4 +1,5 @@
 # Exercício ex7.py
+
 # ° Funções (def, parâmentros e retorno)
 
 # * Por que usar funções?
