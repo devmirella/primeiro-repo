@@ -165,7 +165,7 @@ print(sem_dup)
 #maior = None 
 #menor = None 
 #segundo_maior = None 
-#segundo_menor = None
+#segundo_menor = None 
 
 maior = menor = segundo_maior = segundo_menor = None
 

@@ -16,7 +16,7 @@
 
 # Exemplos rápidos 
 
-def soma(a, b):
+def soma(a, b): 
     return a + b 
 
 total = soma(2, 3)
