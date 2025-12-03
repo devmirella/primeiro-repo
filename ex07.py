@@ -2,6 +2,7 @@
 
 # ° Funções (def, parâmentros e retorno)
 
+
 # * Por que usar funções?
 # - Organizam o código em blocos com nome.
 # - Reaproveitam lógica (escreve uma vez, usa várias).
@@ -10,7 +11,7 @@
 # 1) Forma básica 
 
 # def nome_da_funcao(param1, param2):
-    # faz algo
+   # faz algo
    # return resultado  # opcional, mas MUITO importante!, return é o que uma função faz quando termina
 
 
@@ -205,6 +206,7 @@ def saudaçao(nome= "Mundo"):
     
     
 print(saudaçao())
+
 
 
 # 5) contador (Retorne quantas vogais existem no texto)
