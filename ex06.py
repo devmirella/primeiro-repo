@@ -293,8 +293,8 @@ else:
 
 texto = input("Informe Um Texto: ").lower()
 
-palavras = texto.split() # Divide o texto em palavras
-contagem = {}            # Dicionário para contar cada palavra, Cria um dicionário vazio para contar quantas vezes cada palavra aparece. A ideia é ficar assim: {"python": 3, "é": 2, "legal": 1}.
+palavras = texto.split()  # Divide o texto em palavras
+contagem = {}             # Dicionário para contar cada palavra, Cria um dicionário vazio para contar quantas vezes cada palavra aparece. A ideia é ficar assim: {"python": 3, "é": 2, "legal": 1}.
 
 
 # Conta as ocorrências 
